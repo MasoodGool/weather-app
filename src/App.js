@@ -111,7 +111,7 @@ function App() {
     e.preventDefault();
     axios
       .get(
-        `https://api.positionstack.com/v1/forward?access_key=${GEO_KEY}&query=${location}`
+        `http://api.positionstack.com/v1/forward?access_key=${GEO_KEY}&query=${location}`
       )
       .then((res) => {
         getWeather(
