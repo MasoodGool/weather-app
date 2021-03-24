@@ -55,7 +55,7 @@ function App() {
   let getWeather = (lat, lon, WEATHER_KEY) => {
     axios
       .get(
-        `http://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=metric&exclude=minutely,hourly,alerts&appid=${WEATHER_KEY}`
+        `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=metric&exclude=minutely,hourly,alerts&appid=${WEATHER_KEY}`
       )
       .then((res) => {
         setToday({
@@ -111,7 +111,7 @@ function App() {
     e.preventDefault();
     axios
       .get(
-        `http://api.positionstack.com/v1/forward?access_key=${GEO_KEY}&query=${location}`
+        `https://api.positionstack.com/v1/forward?access_key=${GEO_KEY}&query=${location}`
       )
       .then((res) => {
         getWeather(
