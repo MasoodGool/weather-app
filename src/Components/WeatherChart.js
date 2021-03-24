@@ -42,6 +42,5 @@ const ChartContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 90%;
-  margin-bottom: 10px;
-  font-size: 50px;
+  font-size: 14px;
 `;

@@ -15,25 +15,25 @@ export default function Icon(weather) {
     <div>
       <Switch condition={weather.main}>
         <Case value="Clear">
-          <WiDaySunny size={500} />
+          <WiDaySunny size={20} />
         </Case>
         <Case value="Clouds">
-          <WiCloudy size={500} />
+          <WiCloudy size={20} />
         </Case>
         <Case value="Rain">
-          <WiDayRain size={500} />
+          <WiDayRain size={20} />
         </Case>
         <Case value="Thunderstorm">
-          <WiDayThunderstorm size={500} />
+          <WiDayThunderstorm size={20} />
         </Case>
         <Case value="Snow">
-          <WiDaySnow size={500} />
+          <WiDaySnow size={20} />
         </Case>
         <Case value="Fog">
-          <WiDayFog size={500} />
+          <WiDayFog size={20} />
         </Case>
         <Case value="Windy">
-          <WiCloudyGusts size={500} />
+          <WiCloudyGusts size={20} />
         </Case>
         <Default>
           <div></div>

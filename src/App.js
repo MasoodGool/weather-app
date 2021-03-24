@@ -131,7 +131,7 @@ function App() {
         <DayContainer>
           <form onSubmit={handleSubmit}>
             <label>
-              Enter Location:
+              <span>Enter Location: </span>
               <input
                 type="text"
                 name="location"
@@ -177,26 +177,27 @@ const DayContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
   height: 80%;
-  width: 50%;
+  width: 33.3%;
 
   input {
-    height: 200px;
-    width: 600px;
-    font-size: 50px;
+    font-size: 14px;
+  }
+
+  form {
+    margin-bottom: 40px;
   }
 `;
 
 const WeekContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  border: 1px solid blue;
   height: 80%;
-  width: 50%;
-  font-size: 50px;
+  width: 66.7%;
+  font-size: 10px;
+  padding: 20px;
 `;
 
 export default App;

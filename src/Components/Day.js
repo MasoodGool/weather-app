@@ -5,14 +5,14 @@ import Icon from "./Icon";
 export default function Day(today) {
   return (
     <div>
-      <div>{today.date}</div>
+      <div style={{ paddingBottom: "20px" }}>{today.date}</div>
+      <Icon {...today} />
       <Container>
-        <Icon {...today} style={{ display: "inline-block" }} />
         <div style={{ display: "inline-block" }}>
           <strong>{today.temp}&#8451;</strong>
         </div>
       </Container>
-      <div>{today.description}</div>
+      <div style={{ paddingBottom: "20px" }}>{today.description}</div>
       <Container>
         <div style={{ display: "inline-block" }}>
           <h3>Humidity</h3>
@@ -30,8 +30,6 @@ export default function Day(today) {
 const Container = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
-  font-size: 100px;
+  font-size: 14px;
   width: 90%;
-  border: 1px solid green;
 `;
