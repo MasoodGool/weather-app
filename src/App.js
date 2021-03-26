@@ -111,14 +111,10 @@ function App() {
     e.preventDefault();
     axios
       .get(
-        `http://api.positionstack.com/v1/forward?access_key=${GEO_KEY}&query=${location}`
+        `https://eu1.locationiq.com/v1/search.php?key=${GEO_KEY}&q=${location}&format=json`
       )
       .then((res) => {
-        getWeather(
-          res.data.data[0].latitude,
-          res.data.data[0].longitude,
-          WEATHER_KEY
-        );
+        getWeather(res.data[0].lat, res.data[0].lon, WEATHER_KEY);
       })
       .catch((err) => {
         console.log(err);
